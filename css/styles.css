@@ -251,6 +251,18 @@ cursor: pointer;
   background: var(--ocean);
   color: var(--primary-fon-color);
 }
+
+
+.modal-title{
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 72px;
+}
+
+
+
+
   /* кнопка  студія*/
   .button {
     background-color: var(--accent-color);
