@@ -257,9 +257,69 @@ cursor: pointer;
   font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 72px;
+    margin-top: 48px;
+}
+  /* form */
+.form{
+ 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
+ 
+.form-label{
+  margin-bottom: 4px;
+  text-align: left;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+    
+ 
+
+}
+.form-input{
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: var(--title-text-color);
+
+}
+.form-icon{
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  fill: var(--title-text-color);
+}
+
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+
+}
+.form-input:focus ~ .form-icon{
+ fill: var(--accent-color);
+}
+::placeholder{
+margin-left: 16px;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
 
 
 
@@ -580,6 +640,52 @@ margin-left: 24px;
   fill: currentColor;
 }
 
+   /* form-footer */
+     .form-footer{
+      margin-left: 80px;
+      width: 453px;
+     }
+     .form-footer .title{
+      margin-bottom: 16px;
+      font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+     }
+   
+   .footer-form-input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color:var(--title-text-color) ;
+    padding-left: 16px;
+   }
+
+  .footer-button{
+    color:var(--primary-fon-color);
+    background: var(--accent-color);
+      border-radius: 4px;
+      margin-left: 24px;
+      padding: 8px 24px;
+      display: flex;
+      justify-content: center;
+    
+  }
+  .footer-button > p{
+    font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+  } 
+  .form-client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+     .form-logo-footer{
+      fill: var(--primary-fon-color);
+      margin-left: 16px;
+     }
   /* скритий заголовок */
   .visually-hidden {
     position: absolute;

@@ -66,18 +66,56 @@
                 </svg>
               </button>
             </div>
-            <h2 class="modal-title title">
+            <p class="modal-title">
               Leave your contacts and we will call you back
-            </h2>
-            <form>
-              <label for="name">NAME</label>
-              <input type="name" name="name" id="name" /> </br>
-              <label for="tel">Phone</label>
-              <input type="tel" name="tel" id="tel" /></br>
-              <label for="emeil">Emeil</label>
-              <input type="emeil" name="emeil" id="emeil" /></br>
+            </p>
+            <form class="form">
+              <div class="form-field">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="uzername"
+                  id="name"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/symbol.svg#icon-person"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="tel">Phone</label>
+                <input class="form-input" type="tel" name="tel" id="tel" />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/symbol.svg#icon-phone"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="emeil">Emeil</label>
+                <input
+                  class="form-input"
+                  type="emeil"
+                  name="emeil"
+                  id="emeil"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/symbol.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="comment">Comment</label>
+                <input
+                  class="form-input"
+                  type="emeil"
+                  name="emeil"
+                  id="comment"
+                  placeholder="Text input"
+                  rows="10"
+                />
+              </div>
+
+              <button type="submit" class="button">Send</button>
             </form>
-            <button type="submit" class="button" >Send</button>
           </div>
         </div>
       </section>
@@ -386,6 +424,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-footer">
+          <h2 class="title">Subscribe</h2>
+
+          <form class="form-client">
+            <label class="fotter-form-label" for="emeil"></label>
+            <input
+              class="footer-form-input"
+              type="emeil"
+              name="emeil"
+              id="emeil"
+              placeholder="Emeil"
+            />
+            <button class="footer-button" type="submit">
+              <p>Subscribe</p>
+              <svg class="form-logo-footer" width="24" height="24">
+                <use href="./images/symbol.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
