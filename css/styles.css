@@ -221,15 +221,15 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
+    padding-top: 72px ;
+   
     align-items: center;
 }
-.modal-clock{
-  position: relative;
-}
+
 .modal .modal-button{
 position: absolute;
-top: 0;
-right: 0;
+top: 24px;
+right: 24px;
   width: 24px;
   height: 24px; 
   border-radius: 50%;
@@ -257,7 +257,7 @@ cursor: pointer;
   font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 48px;
+   
 }
   /* form */
 .form{
@@ -270,6 +270,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 8px;
 }
 
  
@@ -288,27 +289,30 @@ cursor: pointer;
 .form-input{
   
   padding: 8px 12px;
-  margin-bottom: 8px;
+  
+ 
   width: 100%;
   min-height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: var(--title-text-color);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
 
 }
 .form-icon{
   position: absolute;
+  align-items: center;
   left: 16px;
-  bottom: 16px;
+  bottom: 8px;
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
-  border: 1px solid var(--accent-color);
+  border-color: 1px solid var(--accent-color);
   color: var(--accent-color);
   outline: none;
 
@@ -318,28 +322,29 @@ cursor: pointer;
 }
 
 
-::placeholder{
+ ::placeholder{
   font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
-    color: rgba(117, 117, 117, 0.5);
-}
-.textareas{
+    color: rgba(117, 117, 117, 0.5); 
+
+ }
+.textarea {
   padding-left: 16px;
   width: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.textareas:focus {
+.textarea:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
   outline: none;
-}
+} 
 
 
 .checkbox  span{
@@ -370,6 +375,8 @@ cursor: pointer;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     margin-right: 8px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .icon{
@@ -379,6 +386,7 @@ background-image: url(../images/daw.svg);
 background-size: contain;
 background-repeat: no-repeat;
 background-origin: content-box;
+background-position: center;
 
 }
 .checkbox-label .link{
@@ -388,7 +396,9 @@ background-origin: content-box;
  
 }
 
-
+.form .button{
+  width: 169px;
+}
 
 
 
@@ -735,6 +745,7 @@ margin-left: 24px;
     border-radius: 4px;
     background-color:var(--title-text-color) ;
     padding-left: 16px;
+    color: var(--primary-white-color);
    }
 
   .footer-button{
@@ -745,9 +756,17 @@ margin-left: 24px;
       padding: 8px 24px;
       display: flex;
       justify-content: center;
+      align-items: center;
       border: none;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
+
+    .footer-button:hover,
+    .footer-button:focus{
+      background-color: var(--ocean);
+    }
   .footer-button > p{
     font-size: 16px;
       line-height: 1.5;

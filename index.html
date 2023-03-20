@@ -59,13 +59,12 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <div class="modal-clock">
-              <button type="button" class="modal-button" data-modal-close>
-                <svg class="modal-icon" width="8" height="8">
-                  <use href="./images/symbol.svg#icon-icon-Vector"></use>
-                </svg>
-              </button>
-            </div>
+            <button type="button" class="modal-button" data-modal-close>
+              <svg class="modal-icon" width="8" height="8">
+                <use href="./images/symbol.svg#icon-icon-Vector"></use>
+              </svg>
+            </button>
+
             <p class="modal-title">
               Leave your contacts and we will call you back
             </p>
@@ -91,27 +90,26 @@
               </div>
 
               <div class="form-field">
-                <label class="form-label" for="emeil">Emeil</label>
+                <label class="form-label" for="email">Emeil</label>
                 <input
                   class="form-input"
-                  type="emeil"
-                  name="emeil"
-                  id="emeil"
+                  type="email"
+                  name="email"
+                  id="email"
                 />
                 <svg class="form-icon" width="18" height="24">
                   <use href="./images/symbol.svg#icon-email"></use>
                 </svg>
               </div>
+              <label>
+                <textarea
+                  class="textarea"
+                  name="feedback"
+                  rows="8"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
 
-              <textarea
-                class="textareas"
-                type="textarea"
-                name="textarea"
-                id="comment"
-                placeholder="Text input"
-                rows="8"
-              >
-              </textarea>
               <label class="checkbox-label">
                 <input
                   class="checkbox"
@@ -438,16 +436,16 @@
           <h2 class="title">Subscribe</h2>
 
           <form class="form-client">
-            <label class="fotter-form-label" for="emeil"></label>
+            <label class="fotter-form-label" for="email"></label>
             <input
               class="footer-form-input"
-              type="emeil"
-              name="emeil"
+              type="email"
+              name="email"
               id="emeil"
-              placeholder="Emeil"
+              placeholder="E-mail"
             />
             <button class="footer-button" type="submit">
-              <p>Subscribe</p>
+              Subscribe
               <svg class="form-logo-footer" width="24" height="24">
                 <use href="./images/symbol.svg#icon-telegram"></use>
               </svg>
