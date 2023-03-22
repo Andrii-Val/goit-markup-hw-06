@@ -217,7 +217,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     top: 50%;
     transform: translate(-50%,-50%);
      width: 408px;
-    min-height: 584px;
+    height: 584px;
     background: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
@@ -333,6 +333,7 @@ cursor: pointer;
  }
 .textarea {
   padding-left: 16px;
+  height: 120px;
   width: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -346,7 +347,9 @@ cursor: pointer;
   color: var(--accent-color);
   outline: none;
 } 
-
+.form-field.response{
+  margin-bottom: 16px;
+}
 
 .checkbox  span{
   text-decoration: none;
@@ -400,14 +403,6 @@ background-position: center;
 .form .button{
   width: 169px;
 }
-
-
-
-
-
-
-
-
 
   /* кнопка  студія*/
   .button {
@@ -772,7 +767,7 @@ margin-left: 24px;
     .footer-button:focus{
       background-color: var(--ocean);
     }
-   */
+   
   .form-client{
     display: flex;
     align-items: center;
